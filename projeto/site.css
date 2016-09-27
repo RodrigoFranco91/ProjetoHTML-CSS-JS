@@ -9,6 +9,10 @@ h1, h2{
 	font-size: 30px;
 }
 
+h2{
+	clear: both;
+}
+
 
 main h1{
 	text-transform: uppercase;
@@ -39,12 +43,21 @@ aside{
 	color: #F2FFFC;
 	padding: 20px;
 	text-align: center;
+	float: right;
+	clear: right;
+	width: 15%;
+	position: relative; /* Leva em consiederação a posição real do elemento) */
+	top: 310px;
 }
 
 .rodape-pagina{
 	background: black;
 	color: #F2FFFC;
 	padding: 20px;
+	clear: both;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
 }
 
 main a{
@@ -57,7 +70,7 @@ aside a{
 	font-family: "Open Sans Condensed";
 }
 
-.main{
+.container{
 	width: 720px;
 	margin-left: auto;
 	margin-right: auto;
@@ -116,3 +129,56 @@ article{
     background-color: #E6E7E8;
     text-decoration: none;
 }
+
+.fiat{
+	float: right;
+}
+
+.petrobras{
+	float: left; 
+}
+
+cite{
+	display: block;
+	text-align: right;
+	font-style: italic;
+}
+
+.minha-foto{
+	float: right;
+}
+
+main{
+	float: left;
+	width: 85%;
+	padding-bottom: 50px;
+}
+
+aside, .minha-foto{
+	border-left: 10px solid black;
+	border-bottom: 10px solid black;
+	box-sizing: border-box;
+}
+
+.minha-foto{
+	position: absolute; /*para poder aumentar a foto em sua posição. O absolute leva em consideraçao o navegador e o scroll. Ele auemnta pois ñ mantem o fluxo */
+	top: 0;
+	right: 0;
+}
+/* estilos da pagina portfolio */
+
+.meus-projetos li{
+	border: 8px solid black;
+	background: #FAFFFC;
+	padding: 16px;
+	width: 45%;
+	box-sizing: border-box;
+	margin-bottom: 16px;
+	margin-right: 16px;
+	display: inline-block;
+}
+
+.meus-projetos li img{
+	width: 100%;
+}
+
